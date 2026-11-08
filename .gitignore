@@ -1,18 +1,25 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Ignore raw USGS GeoTIFF files
+*.tif
+*.tiff
 
-# Other files and folders
-.settings/
+# Ignore large data folders
+data/
+raw_data/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Subsurface Terrain & Elevation Analysis
+
+## Project Overview
+This project bridges the gap between raw spatial topography and numerical reservoir workflows. We process raw digital elevation models to create actionable subsurface visualizations. 
+
+## The Pipeline
+1. **Data Foundation (Kamal):** Raw spatial data is sourced via GeoTIFF files directly from the USGS database to ensure topographical accuracy.
+2. **Computational Engine (Python):** Numerical reservoir calculations are automated programmatically, replacing manual spreadsheet workflows.
+3. **Spatial Visualization (Ferid):** Terrain analysis and DEM processing are executed in QGIS/ArcMap to generate final visual models.
+
+## Note on Data Files
+Due to GitHub's file size limits, the raw USGS GeoTIFF raster files (`.tif`) are not included in this repository. 
+* To run this project locally, acquire the relevant GeoTIFF datasets from USGS and place them in a local `/data` directory before opening the `.qgz` project file.
+
+## Final Output
+*(Drag and drop your best QGIS map screenshots here)*    bu README ucundu
